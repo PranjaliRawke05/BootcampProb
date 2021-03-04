@@ -15,8 +15,12 @@ echo $ans2
 ans3=$(($a%$b+$c))
 echo $ans3
 exp=0
-dict[exp++]=$ans
-dict[exp++]=$ans1
-dict[exp++]=$ans2
-dict[exp++]=$ans3
-
+dict[((exp++))]=$ans
+dict[((exp++))]=$ans1
+dict[((exp++))]=$ans2
+dict[((exp++))]=$ans3
+count=0
+arr[((count++))]=${dict[0]}
+arr[((count++))]=${dict[1]}
+arr[((count++))]=${dict[2]}
+arr[((count++))]=${dict[3]}
