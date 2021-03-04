@@ -24,3 +24,18 @@ arr[((count++))]=${dict[0]}
 arr[((count++))]=${dict[1]}
 arr[((count++))]=${dict[2]}
 arr[((count++))]=${dict[3]}
+
+for (( i=0; i<4; i++ ))
+do
+	for (( j=0; j<4-$i-1; j++))
+	do
+		tempj=$(($j+1))
+		if [ ${arr[j]} -lt ${arr[tempj]} ]
+		then
+			temp=${arr[j]}
+			arr[j]=${arr[tempj]}
+			arr[tempj]=$temp
+		fi
+	done
+done
+echo "Sorted array"${arr[@]}
