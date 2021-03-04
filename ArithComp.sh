@@ -9,3 +9,6 @@ ans=$(($a+$b*$c))
 echo $ans
 ans1=$(($a*$b+$c))
 echo $ans1
+ans2=$(($c+$a/$b))
+echo $ans2
+
