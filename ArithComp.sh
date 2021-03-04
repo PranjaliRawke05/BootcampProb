@@ -30,7 +30,7 @@ do
 	for (( j=0; j<4-$i-1; j++))
 	do
 		tempj=$(($j+1))
-		if [ ${arr[j]} -lt ${arr[tempj]} ]
+		if [ ${arr[j]} -gt ${arr[tempj]} ]
 		then
 			temp=${arr[j]}
 			arr[j]=${arr[tempj]}
