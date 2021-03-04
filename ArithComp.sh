@@ -7,3 +7,5 @@ read c
 
 ans=$(($a+$b*$c))
 echo $ans
+ans1=$(($a*$b+$c))
+echo $ans1
