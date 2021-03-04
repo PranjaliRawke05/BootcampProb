@@ -11,4 +11,5 @@ ans1=$(($a*$b+$c))
 echo $ans1
 ans2=$(($c+$a/$b))
 echo $ans2
-
+ans3=$(($a%$b+$c))
+echo $ans3
